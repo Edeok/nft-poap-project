@@ -1,0 +1,6 @@
+-Definición del proyecto
+-Como esta organizado
+-Diagrama arquitectura
+-Poap intrucciones de intalación 
+-Como contribuir
+-Video instructivo, recorrido pagina
