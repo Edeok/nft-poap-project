@@ -1,0 +1,9 @@
+[submodule "poap-frontend"]
+	path = poap-frontend
+	url = https://github.com/Colifaa/Andino.git
+[submodule "poap-contracts"]
+	path = poap-contracts
+	url = https://github.com/kandra/andino-dao-challenge.git
+[submodule "poap-backend"]
+	path = poap-backend
+	url = https://github.com/kandra/minter-andino.git
