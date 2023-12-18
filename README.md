@@ -3,5 +3,5 @@
 # Diagrama arquitectura
 # Poap intrucciones de intalación 
 # Como contribuir
-# Video instructivo, recorrido pagina
+# Video instructivo, recorrido página
 
