@@ -11,7 +11,7 @@ Este proyecto consiste en un contrato inteligente actualizable con un proxy para
 
 - **Backend:**  `/poap-backend`: "El backend del proyecto consiste en una aplicación Express en JavaScript que utiliza la biblioteca ethers para interactuar con contratos inteligentes en la red Ethereum. Este backend proporciona endpoints para manejar transacciones meta, específicamente para la creación ('minting') de NFT POAP. Utiliza un proveedor de Ethereum de Alchemy y un contrato inteligente definido por su dirección y ABI para llevar a cabo estas transacciones. Además, incluye validación de eventos existentes antes de realizar la mintificación del NFT POAP."
 
-- **Frontend:** - `/poap-frontend`:"El directorio frontend contiene archivos y componentes de una aplicación web desarrollada en React.js para la creación de NFT POAP. La estructura principal incluye componentes como Cards, CardsUser, ImageLoad y DepositButton, cada uno desempeñando un papel específico en la interfaz de usuario y la funcionalidad del sistema.
+- **Frontend:** - `/poap-frontend`: "El directorio frontend contiene archivos y componentes de una aplicación web desarrollada en React.js para la creación de NFT POAP. La estructura principal incluye componentes como Cards, CardsUser, ImageLoad y DepositButton, cada uno desempeñando un papel específico en la interfaz de usuario y la funcionalidad del sistema.
 
 El archivo principal, 'Admin.js', define la lógica principal para la creación de eventos POAP. Utiliza librerías como axios para realizar solicitudes HTTP, Web3 para interactuar con la red Ethereum, y qrcode.react para la generación de códigos QR.
 
@@ -22,9 +22,10 @@ Además, contiene la integración con la red Ethereum para la creación de contr
 La estructura general del directorio frontend refleja la separación de responsabilidades en componentes React especializados para facilitar la creación y gestión de eventos POAP en la interfaz de usuario de manera intuitiva."
 
 
-- **Contratos** - `/poap-contracts`: Contratos del Proyecto
-1. PoapContract
-El contrato PoapContract es el corazón del ecosistema de NFTs POAP (Proof of Attendance Protocol). Este contrato se encarga de la creación, mintificación y gestión de los POAPs que representan la asistencia a eventos.
+ # **Contratos** - `/poap-contracts`: Contratos del Proyecto
+ - **`PoapContract`**
+ - **`PoapContractProxy`**
+ 1. El contrato `PoapContract` es el corazón del ecosistema de NFTs POAP (Proof of Attendance Protocol). Este contrato se encarga de la creación, mintificación y gestión de los POAPs que representan la asistencia a eventos.
 
 ## Funcionalidades Clave:
 - **Creación de POAPs**: Permite a los usuarios crear POAPs para eventos específicos con información detallada.
@@ -33,8 +34,7 @@ El contrato PoapContract es el corazón del ecosistema de NFTs POAP (Proof of At
 - **Gestión de Eventos**: Permite la gestión y visualización de eventos pasados y futuros asociados a los POAPs.
 - **Actualización de Contratos**: Funcionalidad para actualizar los contratos inteligentes, manteniendo la flexibilidad y la capacidad de mejoras futuras.
 
-2. PoapContractProxy
-El contrato PoapContractProxy actúa como un proxy para el contrato principal PoapContract, permitiendo la actualización dinámica de su implementación.
+2. El contrato `PoapContractProxy` actúa como un proxy para el contrato principal PoapContract, permitiendo la actualización dinámica de su implementación.
 
  ## Funcionalidades Principales:
 Redirige llamadas y transacciones hacia la implementación actual del contrato PoapContract.
@@ -149,7 +149,7 @@ Una vez mintificados, los POAPs estarán disponibles para su distribución y ges
 Los usuarios podrán reclamar sus POAPs o participar en eventos relacionados.
 Siguiendo estos pasos, los usuarios podrán fácilmente crear POAPs para eventos específicos, mintificarlos en la blockchain y gestionarlos de manera eficiente dentro de la aplicación.
 
-## Contribución
+# Contribución
 
 ¡Estamos abiertos a contribuciones! Si deseas colaborar con este proyecto, sigue estos pasos:
 
@@ -160,7 +160,7 @@ Siguiendo estos pasos, los usuarios podrán fácilmente crear POAPs para eventos
 5. Crea un nuevo Pull Request.
 
 
-## Contacto
+# Contacto
 
 Si tienes preguntas o sugerencias, puedes ponerte en contacto con [nombre o alias] a través de [correo electrónico o método de contacto].
 </div>
