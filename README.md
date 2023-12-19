@@ -110,7 +110,7 @@ Para configurar las variables de entorno, asegúrate de copiar el archivo `.env 
 1. Clona el repositorio del frontend.
 2. Instala las dependencias con `npm install`.
 3. Configura Variables de Entorno:
-Para configurar las variables de entorno, asegúrate de copiar el archivo `.env.local.copy ` como `.env.local` y completa las variables necesarias con sus respectivos valores. Aquí encontrarás las claves de API, credenciales de bases de datos y otros detalles de configuración importantes.
+Para configurar las variables de entorno, asegúrate de copiar el archivo `.env local copy ` como `.env.local` y completa las variables necesarias con sus respectivos valores. Aquí encontrarás las claves de API, credenciales de bases de datos y otros detalles de configuración importantes.
 4. Inicia la aplicación con `npm run dev`.
 
 ## Contratos
