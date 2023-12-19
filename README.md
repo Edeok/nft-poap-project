@@ -13,7 +13,7 @@ Este proyecto consiste en un contrato inteligente actualizable con un proxy para
 
 - **Frontend:** - `/poap-frontend`: "El directorio frontend contiene archivos y componentes de una aplicación web desarrollada en React.js para la creación de NFT POAP. La estructura principal incluye componentes como Cards, CardsUser, ImageLoad y DepositButton, cada uno desempeñando un papel específico en la interfaz de usuario y la funcionalidad del sistema.
 
-El archivo principal, 'Admin.js', define la lógica principal para la creación de eventos POAP. Utiliza librerías como axios para realizar solicitudes HTTP, Web3 para interactuar con la red Ethereum, y qrcode.react para la generación de códigos QR.
+El archivo principal, 'Admin.jsx', define la lógica principal para la creación de eventos POAP. Utiliza librerías como axios para realizar solicitudes HTTP, Web3 para interactuar con la red Ethereum, y qrcode.react para la generación de códigos QR.
 
 Este archivo se encarga de manejar la carga de imágenes a través de Pinata Cloud a través de la función 'uploadFile', la creación de eventos POAP a través de la función 'createEvent', y la gestión de la interfaz de usuario para la entrada de datos necesarios, como el título del evento, fechas, descripciones y cantidad de POAPs a crear.
 
