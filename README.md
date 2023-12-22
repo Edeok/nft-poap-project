@@ -42,6 +42,44 @@ Permite actualizaciones de la implementación del contrato principal sin interru
 Gestiona la dirección de la implementación y el cambio de administrador a través de funciones específicas.
 Ambos contratos en conjunto ofrecen una infraestructura sólida y flexible para la gestión de los NFTs POAP, permitiendo la creación, distribución y actualización dinámica de estos tokens no fungibles asociados a la asistencia a eventos.
 
+# Contratos POAP - Despliegue
+
+Este repositorio contiene los contratos inteligentes relacionados con el ecosistema de NFTs POAP (Proof of Attendance Protocol). Se incluyen dos scripts de despliegue para los contratos principales:
+
+# Scripts de Despliegue
+
+### `deployPoapContract.js`
+
+Este script despliega el contrato `PoapContract`, el cual constituye el núcleo del protocolo POAP. Este contrato gestiona la creación, mintificación y administración de los tokens POAP asociados a la asistencia a eventos.
+
+#### Funcionalidades Clave del Contrato:
+
+- **Creación de POAPs**: Permite a los usuarios crear POAPs para eventos específicos con información detallada.
+- **Mintificación de POAPs**: Facilita la mintificación de los POAPs creados, asignándolos a direcciones específicas.
+- **Gestión de Eventos**: Permite la gestión y visualización de eventos pasados y futuros asociados a los POAPs.
+- **Actualización de Contratos**: Funcionalidad para actualizar los contratos inteligentes, manteniendo la flexibilidad y la capacidad de mejoras futuras.
+
+#### Uso:
+
+npx hardhat run scripts/deployPoapContract.js --network [nombre_de_la_red]
+
+
+## deployPoapContractProxy.js
+
+Este script despliega el contrato `PoapContractProxy`, que actúa como un proxy para el contrato principal `PoapContract`. Permite la actualización dinámica de la implementación de `PoapContract` sin interrumpir sus funcionalidades.
+
+### Funcionalidades Principales del Contrato Proxy:
+
+- Redirige llamadas y transacciones hacia la implementación actual del contrato `PoapContract`.
+- Permite actualizaciones de la implementación del contrato principal sin interrumpir sus funcionalidades.
+- Gestiona la dirección de la implementación y el cambio de administrador a través de funciones específicas.
+
+### Uso:
+
+npx hardhat run scripts/deployPoapContractProxy.js --network [nombre_de_la_red]
+
+
+
 
 # Estructura de Directorios
 El repositorio del proyecto está organizado de la siguiente manera:
@@ -63,8 +101,12 @@ El repositorio del proyecto está organizado de la siguiente manera:
 ## Contratos
 - **/poap-contratos**: Contiene los contratos inteligentes utilizados en la aplicación.
    - **/contracts**: Archivos de contratos inteligentes Solidity.
+     - **/PoapContract**
+     - **/PoapContractProxy**
    - **/ipfs**: Directorio para almacenamiento en IPFS o archivos relacionados.
    - **/scripts**: Scripts para despliegue, pruebas o migraciones de contratos.
+     - **/deployContract**
+     - **/deployContractProxy**
    - **/test**: Archivos y resultados de pruebas para los contratos.
    - **/utils**: Utilidades o herramientas adicionales para los contratos.
    - **package.json**: Archivo que lista las dependencias y configuraciones del proyecto.
