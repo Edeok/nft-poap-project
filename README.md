@@ -61,7 +61,7 @@ Este script despliega el contrato `PoapContract`, el cual constituye el núcleo 
 
 #### Uso:
 
-npx hardhat run scripts/deployPoapContract.js --network [nombre_de_la_red]
+npx hardhat run scripts/deployContract.js --network [nombre_de_la_red]
 
 
 ## deployPoapContractProxy.js
@@ -76,7 +76,7 @@ Este script despliega el contrato `PoapContractProxy`, que actúa como un proxy 
 
 ### Uso:
 
-npx hardhat run scripts/deployPoapContractProxy.js --network [nombre_de_la_red]
+npx hardhat run scripts/deployContractProxy.js --network [nombre_de_la_red]
 
 
 
