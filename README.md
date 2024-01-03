@@ -22,7 +22,7 @@ Además, contiene la integración con la red Ethereum para la creación de contr
 La estructura general del directorio frontend refleja la separación de responsabilidades en componentes React especializados para facilitar la creación y gestión de eventos POAP en la interfaz de usuario de manera intuitiva."
 
 
- # **Contratos** - `/poap-contracts`: Contratos del Proyecto
+ - **Contratos:** - `/poap-contracts`: Contratos del Proyecto
  - **`PoapContract`**
  - **`PoapContractProxy`**
  1. El contrato `PoapContract` es el corazón del ecosistema de NFTs POAP (Proof of Attendance Protocol). Este contrato se encarga de la creación, mintificación y gestión de los POAPs que representan la asistencia a eventos.
