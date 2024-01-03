@@ -48,7 +48,7 @@ Este repositorio contiene los contratos inteligentes relacionados con el ecosist
 
 # Scripts de Despliegue
 
-### `deployPoapContract.js`
+### `deployContract.js`
 
 Este script despliega el contrato `PoapContract`, el cual constituye el núcleo del protocolo POAP. Este contrato gestiona la creación, mintificación y administración de los tokens POAP asociados a la asistencia a eventos.
 
@@ -64,7 +64,7 @@ Este script despliega el contrato `PoapContract`, el cual constituye el núcleo 
 npx hardhat run scripts/deployContract.js --network [nombre_de_la_red]
 
 
-## deployPoapContractProxy.js
+## `deployContractProxy.js`
 
 Este script despliega el contrato `PoapContractProxy`, que actúa como un proxy para el contrato principal `PoapContract`. Permite la actualización dinámica de la implementación de `PoapContract` sin interrumpir sus funcionalidades.
 
@@ -161,7 +161,7 @@ Para configurar las variables de entorno, asegúrate de copiar el archivo `.env.
 2. Configura Variables de Entorno:
 Para configurar las variables de entorno, asegúrate de copiar el archivo `.env copy` como `.env` y completa las variables necesarias con sus respectivos valores. Aquí encontrarás las claves de API, credenciales de bases de datos y otros detalles de configuración importantes.
 3. Despliegue de Contratos:
-Utilizo Hardhat para compilar y desplegar los contratos. Ejecuto el siguiente comando para desplegar los contratos en un entorno local o de desarrollo: `npx hardhat run scripts/deploy.js --network <nombre_del_entorno>`.
+Utilizo Hardhat para compilar y desplegar los contratos. Ejecuto el siguiente comando para desplegar los contratos en un entorno local o de desarrollo: `npx hardhat run scripts/deployContract.js --network <nombre_del_entorno>`.
 4. Pruebas y Verificación:
 Una vez desplegados, realizo pruebas para verificar el correcto funcionamiento de los contratos. Utilizo Hardhat para ejecutar pruebas unitarias o de integración:  `npx hardhat test `.
 
